@@ -1,11 +1,11 @@
 import json
 import requests
 import setListPull
-import pagify
+import pagifyCardData
 import csv
 
 #collect the de-paginated data from pagify
-collated_pages = pagify.collated_pages
+collated_pages = pagifyCardData.collated_pages
 
 #initialize list for each card entry
 card_lists = []
@@ -31,12 +31,9 @@ for card in card_lists:
 #            card_lists.extend()
 #    card_lists.append(collated_pages[page]["data"])
 
-print(len(scryfall_ids))
-
-print(*scryfall_ids, sep="\n")
-
-f = open(setListPull.valid_set_code + "_output2.csv", 'w')
+f = open(setListPull.validated_set_code + "_output.csv", 'w')
 print(*scryfall_ids, sep="\n", file=f)  # Python 3.x
 
+print(setListPull.validated_set_code + "_output.csv has been created.")
 
 exit()

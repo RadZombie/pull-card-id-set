@@ -45,11 +45,11 @@ while validated_set_code == None:
     requested_set = input(
         "Provide the set code or name that you want to query: ")
     if set_names_and_codes.count(requested_set) > 0:
-        print(requested_set + " is a valid set input.")
+        print(requested_set + " is a valid set.")
         if set_codes.count(requested_set) == 0:
             validated_set_code = set_dictionary.get(requested_set)
         else:
-            validated_set_code = requested_set   #validated_set_code = requested_set
+            validated_set_code = requested_set
     else:
         print(requested_set + " is not a valid set input, please provide a set code or name from the following list:")
         #request_for_code_list = None

@@ -4,6 +4,7 @@ import setListPull
 
 request_url = str(setListPull.request_url)
 
+
 def data_page_pull(url):
     response_json = requests.get(url)
     response = json.loads(response_json.text)

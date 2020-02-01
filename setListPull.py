@@ -51,14 +51,17 @@ while validated_set_code == None:
         else:
             validated_set_code = requested_set
     else:
-        print(requested_set + " is not a valid set input, please provide a set code or name from the following list:")
+        print(
+            requested_set +
+            " is not a valid set input, please provide a set code or name from the following list:"
+        )
         #request_for_code_list = None
-#
-#        request_for_code_list = input(
-#        "Would you like to see a list of valid set codes and names? (Y/N)")
-#            if requested_for_code_list = "Y"
-#                print(set_names_and_codes)
-#            else
+        #
+        #        request_for_code_list = input(
+        #        "Would you like to see a list of valid set codes and names? (Y/N)")
+        #            if requested_for_code_list = "Y"
+        #                print(set_names_and_codes)
+        #            else
         print(*set_names_and_codes, sep="\n")
 #used for debug/testing
 #with open("set_date.json", 'w') as outfile:
@@ -67,7 +70,6 @@ while validated_set_code == None:
 #request set code from user
 
 #pull set codes and names and put them into list
-
 
 #ensure requested set is a valid set code.
 #if requested_set_code in :
